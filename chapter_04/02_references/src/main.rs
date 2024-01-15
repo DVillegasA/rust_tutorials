@@ -23,8 +23,19 @@ fn main() {
 
     // vectors
     let mut v: Vec<i32> = vec![1, 2, 3];
-    // let num: &i32 = &v[2];
+    let num: &mut i32 = &mut v[2];
+    
+    *num += 1;
+    println!("Third element is {}", *num);
+
+    let num2: &i32 = &*num;
+    
+    println!("{} {}", num, num2);
+
+    println!("Vector is now {:?}", v);
+
     v.push(4);
+    
     // cannot borrow `v` as mutable because it is also borrowed as immutable
     // println!("Third element  is {}", *num);
 }
