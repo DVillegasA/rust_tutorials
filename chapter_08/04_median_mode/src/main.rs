@@ -8,18 +8,18 @@ fn main() {
     for _ in 0..100 {
         v.push(rand::thread_rng().gen_range(-100..100));
     }
-    println!("Set of data to be analize: {:?}", v);
+    println!("Set of data to be analyze: {:?}", v);
 
     v.sort();
-    let lenght_vector = v.len();
+    let length_vector = v.len();
     
     // If v.len()%2 == 0 then we need the average of n/2 and n/2 + 1
-    if lenght_vector%2 == 0{
-        median = (&v[(lenght_vector/2)-1] + &v[lenght_vector/2])/2;
+    if length_vector%2 == 0{
+        median = (&v[(length_vector/2)-1] + &v[length_vector/2])/2;
     }
     // Else is just n/2
     else{
-        median = v[lenght_vector/2];
+        median = v[length_vector/2];
     }
 
     let mut map = HashMap::new();

@@ -3,7 +3,7 @@ use std::collections::HashMap;
 
 fn display_commands() {
     println!("List of available commands: ");
-    println!("    Add \"name\" to \"deparment\": adds person with the given name to the given department.");
+    println!("    Add \"name\" to \"department\": adds person with the given name to the given department.");
     println!("    List \"department\": Lists every person that works at the given department.");
     println!("    List All: Lists every person that works at the company.");
     println!("    Exit: Exists the program.");
@@ -21,7 +21,7 @@ fn insert_new_employee(
             let new_department = String::from(j);
             let department_vector = company.entry(new_department).or_insert(Vec::new());
             department_vector.push(new_name);
-            println!("New employee added succesfully!")
+            println!("New employee added successfully!")
         } else {
             println!("No department for the new employee was provided.");
         }

@@ -13,14 +13,14 @@ fn main() {
     another_function(x);
     println!("The value of y is: {y}");
     println!("The value of y + 1 is: {}", plus_one(y));
-    print_labeled_meassurement(x, 'h');
+    print_labeled_measurement(x, 'h');
 }
 
 fn another_function(x: i32) {
     println!("The value of x is: {}", x);
 }
 
-fn print_labeled_meassurement(value: i32, unit_label: char) {
+fn print_labeled_measurement(value: i32, unit_label: char) {
     println!("The measurement is: {value}{unit_label}");
 }
 

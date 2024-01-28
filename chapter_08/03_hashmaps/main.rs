@@ -29,7 +29,7 @@ fn main() {
     // println!("My {field_name} is {field_value}");
 
     // If we insert a key that already existed in the hash map 
-    // its old value get overwrited
+    // its old value get overwrite
     scores.insert(String::from("Blue"), 25);
     println!("{:?}", scores);
 

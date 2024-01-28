@@ -8,7 +8,7 @@ fn read_username_from_file(filename: String) -> Result<String, io::Error> {
     // let mut username_file = File::open(filename)?;
     // username_file.read_to_string(&mut username)?;
 
-    // Secod option:
+    // Second option:
     File::open(filename)?.read_to_string(&mut username)?;
     
     Ok(username)

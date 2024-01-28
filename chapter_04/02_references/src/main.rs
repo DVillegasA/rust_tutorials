@@ -3,7 +3,7 @@ fn main() {
     let m2 = String::from("world");
     greet(&m1, &m2);
     let s = format!("{} {}", m1, m2);
-    println!("Formated string: {}", s);
+    println!("Formatted string: {}", s);
 
     // dereferencing examples
     let x: Box<i32> = Box::new(-1);

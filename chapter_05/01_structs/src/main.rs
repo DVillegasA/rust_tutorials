@@ -30,7 +30,7 @@ fn main() {
     if user2.active {
         println!("The user {} with email {} has sign in {} times.", user2.username, user2.email, user2.sign_in_count);
     } else {
-        println!("The user {} is currently innactive.", user2.username)
+        println!("The user {} is currently inactive.", user2.username)
     }
 
     let _black = Color(0, 0, 0);

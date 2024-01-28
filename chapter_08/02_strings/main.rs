@@ -47,7 +47,7 @@ fn main() {
     println!("{s3}");
 
     // each character in "Зд" is made up off two bytes, so when we iterate over it
-    // we would get different iterators with different lenghts depending if we
+    // we would get different iterators with different lengths depending if we
     // are iterating over the characters that make the word "Зд"
     for c in "Зд".chars() {
         println!("{c}");
